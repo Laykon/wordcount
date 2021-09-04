@@ -7,5 +7,6 @@ import (
 
 func main() {
 	var l = len(os.Args) - 1
-	fmt.Println(l)
+	fmt.Print(l)
+	return
 }
