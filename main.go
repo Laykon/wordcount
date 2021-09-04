@@ -14,7 +14,15 @@ func main() {
 	// l++
 	// }
 	// }
+	var l int = 0
 	s := os.Args[1]
-	var l = len(strings.Split(s, ""))
+	var arr = strings.Split(s, " ")
+	for _, w := range arr {
+		if w != "" {
+			l++
+		}
+	}
+	fmt.Println(arr)
+	// var l = len(arr)
 	fmt.Print(l)
 }
