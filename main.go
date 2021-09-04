@@ -6,7 +6,12 @@ import (
 )
 
 func main() {
-	var l = len(os.Args) - 1
+	var l = -1
+	for i := 0; i < len(os.Args); i++ {
+		if len(os.Args[i]) > 0 {
+			l++
+		}
+	}
 	fmt.Print(l)
 	return
 }
